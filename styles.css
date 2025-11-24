@@ -1,0 +1,409 @@
+/* Thiết lập cơ bản */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header và Navigation */
+header {
+    background-color: #1a1a1a; /* Màu tối, mang phong cách không gian */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #ff9900; /* Màu cam nổi bật */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #ff9900;
+    color: #1a1a1a;
+}
+
+/* Main Content Styling */
+main {
+    padding: 40px 0;
+}
+
+/* Hero Section (Chỉ Trang Chủ) */
+.hero {
+    background: url('https://via.placeholder.com/1200x400?text=Planet+of+the+Pizza+Background') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c; /* Màu đỏ pizza */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Featured Pizzas Grid */
+.featured-pizzas h3 {
+    text-align: center;
+    color: #e74c3c;
+    margin-bottom: 30px;
+}
+
+.pizza-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.pizza-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.pizza-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.pizza-card h4 {
+    color: #1a1a1a;
+    margin-top: 0;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    color: #e74c3c;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Quan trọng để padding không làm tăng chiều rộng */
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+/* --- CONTACT FORM --- */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Quan trọng để padding không làm tăng chiều rộng */
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .button {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+/* --- GIỎ HÀNG (CART) --- */
+
+.cart-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+.cart-item:last-child {
+    border-bottom: none; /* Loại bỏ đường kẻ dưới cùng */
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1; /* Chiếm phần lớn không gian giữa ảnh và tổng tiền */
+}
+
+.item-details h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+    color: #b33939; /* Màu đỏ pizza */
+}
+
+.item-details p {
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+
+.item-details input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.item-total {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #ff9f43; /* Màu cam nổi bật */
+    width: 120px; /* Cố định chiều rộng để căn chỉnh */
+    text-align: right;
+}
+
+/* --- TÓM TẮT GIỎ HÀNG (SUMMARY) --- */
+
+.cart-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    border: 1px solid #eee;
+}
+
+.cart-summary h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+.cart-summary p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.final-total {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #b33939 !important;
+    padding-top: 10px;
+}
+
+.checkout-button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.1em;
+    padding: 15px 0;
+    background-color: #00b894; /* Màu xanh lá cây cho nút Thanh toán */
+    color: white;
+}
+
+.checkout-button:hover {
+    background-color: #00a880;
+}
+/* --- MENU --- */
+
+.menu-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #b33939; /* Màu đỏ pizza */
+    margin-bottom: 5px;
+}
+
+.menu-slogan {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các món tự động xuống hàng */
+    gap: 30px; /* Khoảng cách giữa các món */
+    justify-content: center; /* Căn giữa các món trên trang */
+    padding: 20px;
+}
+
+.pizza-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px; /* Chiều rộng cố định cho mỗi thẻ */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pizza-card:hover {
+    transform: translateY(-5px); /* Hiệu ứng nâng nhẹ khi rê chuột */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pizza-card img {
+    width: 100%;
+    height: 200px; /* Chiều cao cố định cho ảnh */
+    object-fit: cover; /* Đảm bảo ảnh luôn đầy đủ khung mà không bị méo */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.pizza-card h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.pizza-card p {
+    font-size: 0.95em;
+    color: #555;
+    min-height: 40px; /* Giúp chiều cao thẻ thống nhất */
+}
+
+.price {
+    font-size: 1.3em;
+    color: #ff9f43; /* Màu cam nổi bật cho giá */
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.add-to-cart {
+    background-color: #b33939; /* Màu đỏ pizza */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #e55039;
+}
+
+/* --- MEDIA QUERIES (Để hiển thị đẹp trên các thiết bị khác nhau) --- */
+
+@media (max-width: 650px) {
+    .pizza-card {
+        width: 100%; /* Trên điện thoại, mỗi món chiếm hết chiều rộng */
+    }
+}
