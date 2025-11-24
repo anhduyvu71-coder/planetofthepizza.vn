@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tên Trang Cụ Thể | Planet of the Pizza 🍕</title> 
+    <title>Trang Chủ | Planet of the Pizza 🍕</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -15,7 +15,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Trang Chủ</a></li> 
+                    <li><a href="index.html" class="active">Trang Chủ</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="cart.html">Giỏ Hàng</a></li>
                     <li><a href="contact.html">Liên Hệ</a></li>
@@ -24,46 +24,38 @@
         </div>
     </header>
 
-<main>
-    <h2 class="menu-title">Thực đơn Pizza Vũ trụ 🪐</h2>
-    <p class="menu-slogan">Mỗi chiếc bánh là một chuyến hành trình vị giác xuyên ngân hà!</p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Khám Phá Hương Vị Ngoài Hành Tinh!</h2>
+                <p>Pizza tươi ngon, nóng hổi, giao hàng siêu tốc đến Trái Đất của bạn.</p>
+                <a href="menu.html" class="cta-button">Xem Menu Ngay</a>
+            </div>
+        </section>
 
-    <section class="menu-items">
-        
-        <div class="pizza-card">
-            <img src="pic/saohoa.jpg" alt="Pizza Sao Hỏa">
-            <h3>Pizza Hỏa Tinh 🌶️</h3>
-            <p>Sốt cà chua cay nồng, xúc xích pepperoni, ớt chuông xanh, và lớp phô mai bùng nổ.</p>
-            <p class="price">250.000 VNĐ</p>
-            <button class="add-to-cart">Thêm vào Giỏ</button>
-        </div>
-        
-        <div class="pizza-card">
-            <img src="pic/truffle.jpg" alt="Pizza Ngân Hà">
-            <h3>Pizza Ngân Hà ✨</h3>
-            <p>Kem phô mai Ricotta, mật ong, và nấm truffle đen, mang lại vị ngọt béo bí ẩn.</p>
-            <p class="price">300.000 VNĐ</p>
-            <button class="add-to-cart">Thêm vào Giỏ</button>
-        </div>
-        
-        <div class="pizza-card">
-            <img src="pic/bacon.jpg" alt="Pizza Sao Thổ">
-            <h3>Pizza Sao Thổ 🧅</h3>
-            <p>Thịt ba chỉ nướng BBQ, hành tây caramel, và sốt cam chua ngọt bao quanh "vành đai" bánh.</p>
-            <p class="price">280.000 VNĐ</p>
-            <button class="add-to-cart">Thêm vào Giỏ</button>
-        </div>
-        
-        <div class="pizza-card">
-            <img src="pic/pizza6.jpg" alt="Pizza Mặt Trăng">
-            <h3>Pizza Mặt Trăng 🧀</h3>
-            <p>Bánh pizza 4 loại phô mai cổ điển (Mozzarella, Cheddar, Parmesan, Gorgonzola) trắng tinh khôi.</p>
-            <p class="price">260.000 VNĐ</p>
-            <button class="add-to-cart">Thêm vào Giỏ</button>
-        </div>
-
-    </section>
-</main>
+        <section class="featured-pizzas">
+            <div class="container">
+                <h3>Pizza Nổi Bật</h3>
+                <div class="pizza-grid">
+                    <div class="pizza-card">
+                        <img src="pic/saohaivuong.jpg" alt="Neptune Seafood" height="300px" width="200px"> 
+                        <h4>Hải Sản Sao Hải Vương</h4>
+                        <p>Tôm, mực tươi rói và sốt kem béo ngậy.</p>
+                    </div>
+                    <div class="pizza-card">
+                        <img src="pic/saohoa.jpg" alt="Mars Spicy">
+                        <h4>Cay Nồng Sao Hỏa</h4>
+                        <p>Pepperoni, ớt Jalapeño và sốt Tabasco đặc biệt.</p>
+                    </div>
+                    <div class="pizza-card">
+                        <img src="pic/saokim.jpg" alt="Venus Veggie">
+                        <h4>Rau Củ Sao Kim</h4>
+                        <p>Đầy ắp rau củ tươi và phô mai Goat Cheese.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
